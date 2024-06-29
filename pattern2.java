@@ -11,8 +11,11 @@ import java.util.Scanner;
 
 public class pattern2 {
    public static void main(String args[]){
-      Scanner sc = new Scanner(System.in);
-      int n  = sc.nextInt();
+      int n;
+      try(Scanner sc = new Scanner(System.in)){
+         n  = sc.nextInt();
+      }
+      
       
       for(int i=0;i<n;i++){
          for(int j =0;j<i+1;j++){
@@ -20,7 +23,8 @@ public class pattern2 {
          }
          System.out.print("\n");
       }
-      sc.close();
+      // sc.close();
+      
    }
 
 }

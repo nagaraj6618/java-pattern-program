@@ -12,9 +12,10 @@ public class pattern3 {
    public static void main(String[] ags){
       try{
          
-         Scanner sc  = new Scanner(System.in);
-         int n = sc.nextInt();
-         sc.close();
+          int n;
+          try (Scanner sc = new Scanner(System.in)) {
+              n = sc.nextInt();
+          }
          System.out.println("*****************Pattern Model 1*******************");
          for (int i = 0; i<n; i++){
             for (int j=0;j<i+1;j++){
@@ -31,7 +32,7 @@ public class pattern3 {
          }
       }
       catch(Exception e){
-         e.printStackTrace();
+         System.out.println(e);
       }
    }
 }
