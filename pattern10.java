@@ -1,3 +1,15 @@
+/* 
+      Half Diamond Star Pattern
+      
+      1        1
+      12      21
+      123    321
+      1234  4321
+      1234554321
+
+*/
+
+
 public class pattern10 {
    public static void main(String [] args){
       int n=5;
